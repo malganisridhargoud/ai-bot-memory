@@ -45,6 +45,7 @@ This application leverages **Groq's LPU inference engine** for lightning-fast re
 
 ### **Frontend**
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
+
 * **Chat UI**: Custom-styled chat interface.
 * **Audio**: Native browser-based audio recording.
 
@@ -61,21 +62,3 @@ This application leverages **Groq's LPU inference engine** for lightning-fast re
 
 ---
 
-## 🧩 Architecture
-
-The system uses a dual-write / single-read architecture for optimal performance.
-
-```mermaid
-graph TD
-    User[User] -->|Voice/Text| UI[Streamlit UI]
-    UI --> Auth[Auth Layer (Bcrypt)]
-    
-    subgraph "AI Processing"
-        UI -->|Prompt| LC[LangChain]
-        LC -->|Inference| Groq[Groq LLaMA 3]
-    end
-    
-    subgraph "Memory Layer"
-        LC <-->|Retrieve Context| Redis[(Redis Cache)]
-        LC -->|Archive| Mongo[(MongoDB Atlas)]
-    end
