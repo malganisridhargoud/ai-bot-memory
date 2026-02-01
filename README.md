@@ -10,6 +10,25 @@ This application leverages **Groq's LPU inference engine** for lightning-fast re
 
 ---
 
+## 📸 Application Preview
+
+### **Voice & Chat Interface**
+*Speak naturally or type. The app transcribes voice instantly and responds with context.*
+
+![Voice Interface](assets/Screenshot%202026-02-01%20232640.png)
+
+### **Secure Login**
+*User-isolated sessions ensure your chat history remains private.*
+
+![Login Screen](assets/Screenshot%202026-02-01%20232542.png)
+
+### **Memory & Settings Sidebar**
+*Manage history, undo mistakes, and see your long-term memory bank in action.*
+
+![Sidebar Memory](assets/Screenshot%202026-02-01%20232705.png)
+
+---
+
 ## ✨ Key Features
 
 | Feature | Description |
